@@ -1,5 +1,8 @@
 import logo from '../assets/logo-nfthub.svg'
 import walletIcon from "../assets/Link-3.svg"
+import twitterIcon from "../assets/twitter.svg"
+import discordIcon from "../assets/discord.svg"
+import instagramIcon from "../assets/instagram.svg"
 
 function Navbar() {
 
@@ -31,9 +34,9 @@ function Navbar() {
   ];
 
   const navIcons = [
-    walletIcon,
-    walletIcon,
-    walletIcon,
+    twitterIcon,
+    discordIcon,
+    instagramIcon,
     walletIcon,
   ];
 
@@ -41,13 +44,13 @@ function Navbar() {
     <nav className="py-5 flex justify-between items-center">
       <img src={logo.src} alt="" />
       <div className="flex space-x-5 px-2 list-none">
-        {navItems.map(item =>
-          <li><a className='capitalize' href="">{item.name}</a></li>
+        {navItems.map((item, index) =>
+          <li key={index}><a className='capitalize font-semibold' href="">{item.name}</a></li>
           )}
       </div>
       <div className="flex space-x-4">
-        {navIcons.map(icon =>
-          <img className='cursor-pointer' src={icon.src} alt="" />  
+        {navIcons.map((icon, index) =>
+          <img key={index} className='cursor-pointer' src={icon.src} alt="" />  
         )}
       </div>
     </nav>
