@@ -17,8 +17,8 @@ function Partners() {
 
   return (
     <div className='flex justify-center space-x-10'>
-      {icons.map((icon: any) => (
-        <img src={icon.src} alt="" />
+      {icons.map((icon: any, key) => (
+        <img key={key} src={icon.src} alt="" />
       ))}
     </div>
   )
