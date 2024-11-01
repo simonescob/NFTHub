@@ -25,5 +25,18 @@
     text-wrap: balance;
   }
 }
+/* 
+.slick-arrow{
+  border: 1px #17c071 solid !important;
+} */
+
+.slick-slider{
+  /* border: 1px #17c071 solid !important; */
+  height: 450px;
+}
+
+.slick-list{
+  margin-top: -55px !important;
+}
 
 

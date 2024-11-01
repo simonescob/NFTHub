@@ -14,6 +14,7 @@ export default function Home() {
         <Partners/>
         <Separator/>
         <Collections/>
+        <Separator/>
       </div>
     </main>
   );
