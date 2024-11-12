@@ -1,10 +1,14 @@
 "use client";
-import React, { useState } from 'react'
+import React from 'react'
 import Slider, { CustomArrowProps } from "react-slick";
+import img1 from '../../assets/art_01.png';
+import img2 from '../../assets/art_02.png';
+import img3 from '../../assets/art_03.png';
+import img4 from '../../assets/art_04.png';
+import ButtonCTA from '../Components/ButtonCTA';
+import { MiniArrowIcon } from '../utils/icons';
 
 function Collections() {
-  const [display, setDisplay] = useState(true);
-  const [width, setWidth] = useState(600);
 
   const settings = {
     dots: true,
@@ -15,6 +19,29 @@ function Collections() {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />
   };
+
+  const sliderItems = [
+    {
+      img: img1,
+      title: 'Metaverse',
+      little_text: 'TheSalvare',
+    },
+    {
+      img: img2,
+      title: 'Polly Doll',
+      little_text: 'TheNative',
+    },
+    {
+      img: img3,
+      title: 'Alec Art',
+      little_text: 'GeorgZvic',
+    },
+    {
+      img: img4,
+      title: 'Toxic Poeth',
+      little_text: 'YazoiLup',
+    },
+  ]
 
   function NextArrow(props: CustomArrowProps) {
     const { onClick } = props;
@@ -72,32 +99,31 @@ function Collections() {
     );
   }
 
-  const CollectionCard = () => {
+  const CollectionCard = (props: { img: string, title: string, little_text: string }) => {
+    const { img, title, little_text } = props
     return (
       <div className="mx-5 text-center">
-        <div className="bg-green-400 w-full h-[352px] mb-4">
-          <img src="" alt="" />
+        <div className="w-full mb-4">
+          <img src={img} alt="" />
         </div>
-        <div className="">#Metaverse</div>
-        <div className="text-sm">By TheSalvare</div>
+        <div className="">#{title}</div>
+        <div className="text-sm">By {little_text}</div>
       </div>
     )
   }
 
   return (
-    <section>
-      <h2>Nfthub's collection</h2>
+    <section className=''>
+      <h2 className='text-center text-4xl font-bold mb-10'>Nfthub's <span className='text-gradient'>collection</span></h2>
       <div className=''>
         <Slider {...settings}>
-          <CollectionCard/>
-          <CollectionCard/>
-          <CollectionCard/>
-          <CollectionCard/>
-          <CollectionCard/>
-          <CollectionCard/>
-          <CollectionCard/>
-          <CollectionCard/>
+          {sliderItems.map((slider, key) => 
+            <CollectionCard img={slider.img.src} title={slider.title} little_text={slider.little_text} key={key}/>
+          )}
         </Slider>
+      </div>
+      <div className="mt-14 flex justify-center">
+        <ButtonCTA>View Collection <span className="ml-2"><MiniArrowIcon/></span></ButtonCTA>
       </div>
     </section>
   )
