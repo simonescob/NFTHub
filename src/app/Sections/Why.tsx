@@ -4,6 +4,7 @@ import icon1 from "../../assets/why_icon_1.svg";
 import icon2 from "../../assets/why_icon_2.svg";
 import icon3 from "../../assets/why_icon_3.svg";
 import icon4 from "../../assets/why_icon_4.svg";
+import TitleSection from '../Components/TitleSection';
 
 function Why() {
   const razons = [
@@ -30,7 +31,7 @@ function Why() {
   ]
   return (
     <section className=''>
-      <h2 className='text-center text-4xl font-bold mb-10'>Why <span className='text-gradient'>choose us?</span></h2>
+      <TitleSection title='Why' titleColored='choose us?'/>
       <div className="flex justify-between flex-wrap">
         {razons.map((razon, key) => 
           <CardVertical key={key} icon={razon.icon} title={razon.title} text={razon.text} topSpace={key % 2 === 1} />

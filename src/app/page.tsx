@@ -3,7 +3,11 @@ import Separator from "./Components/Separator";
 import Navbar from "./Navbar";
 import Collections from "./Sections/Collections";
 import Header from "./Sections/Header";
+import HowItWorks from "./Sections/HowItWorks";
+import Indicators from "./Sections/Indicators";
+import Newsletter from "./Sections/Newsletter";
 import Partners from "./Sections/Partners";
+import Roadmap from "./Sections/Roadmap";
 import Why from "./Sections/Why";
 
 export default function Home() {
@@ -17,6 +21,14 @@ export default function Home() {
         <Collections/>
         <Separator/>
         <Why/>
+        <Separator/>
+        <Indicators/>
+        <Separator/>
+        <HowItWorks/>
+        <Separator/>
+        <Newsletter/>
+        <Separator/>
+        <Roadmap/>
         <Separator/>
       </div>
     </main>
