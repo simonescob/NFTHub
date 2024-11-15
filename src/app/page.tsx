@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Separator from "./Components/Separator";
 import Navbar from "./Navbar";
+import Artists from "./Sections/Artists";
 import Collections from "./Sections/Collections";
 import Header from "./Sections/Header";
 import HowItWorks from "./Sections/HowItWorks";
@@ -29,6 +30,8 @@ export default function Home() {
         <Newsletter/>
         <Separator/>
         <Roadmap/>
+        <Separator/>
+        <Artists/>
         <Separator/>
       </div>
     </main>
