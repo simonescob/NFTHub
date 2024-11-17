@@ -4,12 +4,16 @@ import item2 from "../../assets/Item-1.png"
 import item3 from "../../assets/Item-2.png"
 import ButtonCTA from "../Components/ButtonCTA"
 import { MiniArrowIcon } from "../utils/icons"
+import bgHeader from "../../assets/bg-header.png";
 
 
 function Header() {
   const listImages = [item1, item2, item3];
   return (
     <div className="h-[85vh] flex items-center space-x-8">
+      <div className="absolute top-0 left-0 z-[-10] h-screen">
+        <img src={bgHeader.src} alt="" />
+      </div>
       <div className="w-1/2 space-y-6">
         <h1 className="text-6xl font-bold">High quality <br /> NFT Collection</h1>
         <p className="text-[#7B7583]">A 890 piece custom Nfthub's collection is <br /> joining the NFT space on Opensea.</p>

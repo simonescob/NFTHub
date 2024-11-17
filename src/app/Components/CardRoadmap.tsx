@@ -1,4 +1,5 @@
 import React, { ImgHTMLAttributes } from 'react'
+import checkIcon from "../../assets/checkmark-outline.svg"
 
 interface ICardRoadmapProps {
   phrase: string;
@@ -19,9 +20,9 @@ function CardRoadmap(props: ICardRoadmapProps) {
         <div className="text-sm font-bold text-gradient">{phrase}</div>
         <div className="text-3xl font-bold">{title}</div>
         <div className="text-gray-500">{text}</div>
-        <div className="text-sm space-y-3 ml-7">
+        <div className="text-sm space-y-3 ">
           {items.map((item, key) =>
-            <div key={key} className="">{item}</div>
+            <div key={key} className="flex"> <img className='mr-2' src={checkIcon.src} alt="" /> {item}</div>
           )}
         </div>
       </div>
