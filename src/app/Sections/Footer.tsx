@@ -9,10 +9,10 @@ function Footer() {
   return (
     <footer className='border-t w-full flex flex-col items-center justify-center py-12'>
       <div className="w-full max-w-6xl">
-        <div className="flex items-start justify-between mb-20">
-          <div className="mr-[250px] space-y-8">
+        <div className="flex flex-column flex-wrap lg:flex-row items-start justify-between mb-20">
+          <div className="lg:mr-[250px] space-y-8">
             <img src={logoColored.src} alt="" />
-            <p className='w-[372px] text-gray-500'>
+            <p className='lg:w-[372px] text-gray-500'>
               Join our Discord channel or follow us on
               Twitter to keep up to date with our latest work
               and announcements.

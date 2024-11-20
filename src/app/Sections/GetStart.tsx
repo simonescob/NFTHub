@@ -15,7 +15,7 @@ function GetStart() {
           <TitleSection title="let's start" titleColored='minting' breakActived={true} noMargin={true} />
           <p className='text-gray-500 py-5'>Invest and manage all your NFTs at one place.</p>
           <div className="flex justify-center">
-            <ButtonCTA>Get Start</ButtonCTA>
+            <ButtonCTA>Get started</ButtonCTA>
           </div>
         </div>
       </div>

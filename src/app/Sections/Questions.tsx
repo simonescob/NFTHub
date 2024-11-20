@@ -97,11 +97,7 @@ function Questions() {
   return (
     <section id='questions' className='flex flex-col items-center'>
       <TitleSection title='Your questions, ' titleColored='answered!' breakActived={true} />
-      {/* <button {...getToggleProps()}>
-        {isExpanded ? 'Collapse' : 'Expand'}
-      </button>
-      <section {...getCollapseProps()}>Collapsed content 🙈</section> */}
-      <div className="border rounded-2xl w-[680px] p-8">
+      <div className="border rounded-2xl lg:w-[680px] p-8">
         {data.map((item, index) => (
           <CollapsibleItem
             key={item.id}

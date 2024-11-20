@@ -22,7 +22,7 @@ function Indicators() {
   ] 
   return (
     <section id='indicators'>
-      <div className="flex justify-center">
+      <div className="flex flex-column flex-wrap lg:flex-row justify-center">
         {indicatorList.map((indicator, key) => 
           <Indicator key={key} label={indicator.label} amount={indicator.amount} />
         )}

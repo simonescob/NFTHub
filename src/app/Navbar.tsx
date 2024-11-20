@@ -43,7 +43,7 @@ function Navbar() {
   return (
     <nav className="py-5 flex justify-between items-center">
       <img src={logo.src} alt="" />
-      <div className="flex space-x-5 px-2 list-none">
+      <div className="hidden lg:flex space-x-5 px-2 list-none">
         {navItems.map((item, index) =>
           <li key={index}><a className='capitalize font-semibold' href="">{item.name}</a></li>
           )}
