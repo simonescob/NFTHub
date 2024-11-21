@@ -16,7 +16,7 @@ function CardRoadmap(props: ICardRoadmapProps) {
       <div className="absolute top-[20px] right-[20px] rounded-full">
         <img src={image.src} alt="" />
       </div>
-      <div className='w-[368px] p-10 border space-y-6 rounded-3xl mb-6'>
+      <div className='lg:w-[368px] p-10 border space-y-6 rounded-3xl mb-6'>
         <div className="text-sm font-bold text-gradient">{phrase}</div>
         <div className="text-3xl font-bold">{title}</div>
         <div className="text-gray-500">{text}</div>

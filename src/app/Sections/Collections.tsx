@@ -65,7 +65,7 @@ function Collections() {
   function NextArrow(props: CustomArrowProps) {
     const { onClick } = props;
     return (
-      <div style={{ width: 55 }} className='relative left-[96%] -top-[232px] cursor-pointer' onClick={onClick}>
+      <div style={{ width: 55 }} className='relative left-[80%] lg:left-[96%] -top-[232px] cursor-pointer' onClick={onClick}>
         <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_1_203)">
         <rect x="7.80078" y="4.9834" width="40" height="40" rx="20" fill="white"/>

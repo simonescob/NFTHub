@@ -91,7 +91,7 @@ function Artists() {
   return (
     <section id='artists'>
       <TitleSection title='Meet' titleColored='the artists' />
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row">
         {listArtist.map((artist, key) => 
           <CardArtist key={key} name={artist.name} role={artist.role} image={artist.image} networks={artist.networks} topSpace={key % 2 === 0} />
         )}

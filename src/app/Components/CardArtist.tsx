@@ -16,7 +16,7 @@ interface ICardArtistProps {
 function CardArtist(props: ICardArtistProps) {
   const { image, name, role, networks, topSpace } = props;
   return (
-    <div className={`space-y-4 w-[305px] text-center py-10 ${topSpace === true && 'mt-10'}`}>
+    <div className={`space-y-4 w-[305px] text-center py-10 ${topSpace === true && 'lg:mt-10'}`}>
       <div className="flex justify-center">
         <img src={image.src} alt="" />
       </div>
